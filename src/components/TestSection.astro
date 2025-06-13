@@ -1,5 +1,5 @@
 ---
-import WaterColorReveal from './WaterColorReveal.astro';
+import WaterColorReveal from './WaterColorReveal.tsx';  
 ---
 
 <!-- src/components/TestSection.astro -->
@@ -13,7 +13,7 @@ import WaterColorReveal from './WaterColorReveal.astro';
       <p class="text-lg text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
     </div>
     <div class="flex-1 order-1 md:order-2 flex justify-center">
-      <WaterColorReveal id="section-1" width={400} height={300} className="w-full max-w-md h-[300px]">
+      <WaterColorReveal client:visible id="section-1" width={300} height={300} className="w-full max-w-md h-[300px]">
         <img src="/mj-vineYard-V1.png" alt="Section 1" class="object-cover w-full h-full rounded-xl shadow-lg" />
       </WaterColorReveal>
     </div>
@@ -26,7 +26,7 @@ import WaterColorReveal from './WaterColorReveal.astro';
       <p class="text-lg text-gray-700 mb-6">Suspendisse potenti. Etiam ac mauris lectus. Integer non erat nec nulla cursus ullamcorper. Proin nec facilisis erat.</p>
     </div>
     <div class="flex-1 order-1 md:order-1 flex justify-center">
-      <WaterColorReveal id="section-2" width={400} height={300} revealFromCenter={false} className="w-full max-w-md h-[300px]">
+      <WaterColorReveal client:visible id="section-2" width={400} height={300} className="w-full max-w-md h-[300px]">
         <img src="/mj-vineYard-V1.png" alt="Section 2" class="object-cover w-full h-full rounded-xl shadow-lg" />
       </WaterColorReveal>
     </div>
@@ -39,7 +39,7 @@ import WaterColorReveal from './WaterColorReveal.astro';
       <p class="text-lg text-gray-700 mb-6">Curabitur euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
     </div>
     <div class="flex-1 order-1 md:order-2 flex justify-center">
-      <WaterColorReveal id="section-3" width={400} height={300} className="w-full max-w-md h-[300px]">
+      <WaterColorReveal client:visible id="section-3" width={600} height={300} className="w-full max-w-md h-[300px]">
         <img src="/mj-vineYard-V1.png" alt="Section 3" class="object-cover w-full h-full rounded-xl shadow-lg" />
       </WaterColorReveal>
     </div>
@@ -52,7 +52,7 @@ import WaterColorReveal from './WaterColorReveal.astro';
       <p class="text-lg text-gray-700 mb-6">Phasellus euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
     </div>
     <div class="flex-1 order-1 md:order-1 flex justify-center">
-      <WaterColorReveal id="section-4" width={400} height={300} revealFromCenter={false} className="w-full max-w-md h-[300px]">
+      <WaterColorReveal client:visible id="section-4" width={300} height={300} className="w-full max-w-md h-[300px]">
         <img src="/mj-vineYard-V1.png" alt="Section 4" class="object-cover w-full h-full rounded-xl shadow-lg" />
       </WaterColorReveal>
     </div>
