@@ -26,7 +26,7 @@ const WaterColorReveal = ({
   // Animation runs while element is in viewport
   const { scrollYProgress } = useScroll({
     target: elementRef,
-    offset: ["end end", "end center"],
+    offset: ["center end", "center start"],
   });
 
   // Add this to see if the hook is working at all
@@ -49,8 +49,8 @@ const WaterColorReveal = ({
   // For center reveal, use circle radius
   const circleRadius = useTransform(
     scrollYProgress,
-    [0, 1],
-    [0, Math.max(widthInPx, heightInPx) * 1.5] // Increased to ensure full coverage
+    [0, 0.3],
+    [0, Math.max(widthInPx, heightInPx) * 0.47] // Increased to ensure full coverage
   );
 
   scrollYProgress.on("change", (value: number) => {
