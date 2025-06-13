@@ -3,30 +3,57 @@ import mjVineYard from '/public/mj-vineYard-pencilSketch-1.png';
 import washedOutColors from '/public/mj-vineYard-washedOutColors.png';
 import logo from '/HWE-LogoV2.png';
 ---
-<section id="hero" class="w-full h-full min-h-[70vh] relative mt-[-70px] ">
-  <div class="w-full h-full min-h-[70vh] relative
+<section id="hero" class="w-full h-[100vh] relative mt-[-70px] ">
+  <div class="w-full h-full min-h-[650px] md:min-h-[700px] xl:min-h-[800px] relative
   border-b-4 border-blue-500/0">
         <!-- <img src={washedOutColors.src} alt="vineyard washed out colors" class="w-full h-full object-cover" /> -->
         <img src={mjVineYard.src} alt="vineyard washed out colors" class="w-full h-full absolute inset-0
         object-cover object-bottom" />
-        <div class="inset-0 absolute opacity-50
-        bg-white/5 bg-gradient-to-b from-white via-white/90 to-white/20"/>
-          <div class="absolute w-full h-full inset-0
-          text-4xl font-headline text-white font-bold">
-              <img src="/HWE-LogoV2-noText.svg" alt="Logo" class="w-[35%] mx-auto pt-12 mt-[100px] min-w-[200px] sm:min-w-[300px] 
-              border-4 border-yellow-500/0
-              object-cover" />
-              <h1 class="text-4xl font-headline text-center w-full
-              text-red-950 font-bold bottom-0
+        <div class="absolute opacity-1 top-0 left-0 w-full h-full"
+        style={{
+          backgroundImage: `radial-gradient(ellipse at 50% -250%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 80%)`,
+        }}
+        />
+          <div class="w-full h-full bg-soft-beige/25 relative
+          text-4xl font-headline text-white font-bold
+          flex flex-col items-center justify-center">
+             <div class="w-fit h-fit flex flex-col items-center justify-center">
+              <div class="w-fit h-fit relative">
+                <div class="w-full h-full absolute top-0 left-0 opacity-30
+                bg-gradient-to-b from-soft-beige/20 via-soft-beige/10 to-soft-beige/0 rounded-3xl
+                scale-y-[1.4] scale-x-[1.2] translate-y-[10%]"/>
+                <div class="w-[20%] h-[20%] absolute top-0 right-0
+                translate-x-[50%] translate-y-[-50%]
+                border-t-4 border-r-4 border-yellow-800/5  rounded-tr-3xl border-dashed "/>
+                <div class="w-[20%] h-[30%] absolute bottom-0 left-0
+                translate-x-[-50%] translate-y-[0%]
+                border-l-4 border-yellow-800/10 border-dashed "/>
+                <img src="/HWE-LogoV2-noText.svg" alt="Logo" 
+                class="w-[min(25vw,40vh)] relative
+                min-w-[200px] md:min-w-[230px] max-w-[400px] object-cover"/>
+              </div>
+              <h1 class="text-[clamp(2rem,6vw,4rem)] font-doulaise font-light px-4 text-center w-fit mx-auto text-red-950
+              font-doulaise font-light px-4 text-center w-fit mx-auto text-red-950
+               drop-shadow-[1px_2px_2px_rgba(255,255,255,0.3)]
               ">
-                Wein-Erlebnistouren
-              </h1>
-              <h1 class="hidden text-4xl text-gradient-gold
+              interaktive
+            </h1>
+              <h1 class="w-full  text-[clamp(2rem,6vw,4rem)] md:py-1 lg:py-2  -mt-3 sm:-mt-2 md:-mt-0
+              font-playfair text-center font-extrabold tracking-tighter uppercase 
+              text-gradient-gold drop-shadow-[2px_3px_4px_rgba(255,255,255,0.6)]
               ">
-                Wein-Erlebnistouren
-              </h1>
+              Wein-Erlebnistouren
+            </h1>
+             </div>
+            </div>
+
+
+            
           </div>
-   
+          <div class="
+          w-full h-[250px] lg:h-[200px] xl:h-[250px] relative bg-gradient-to-t from-white via-white/30 to-white/0 
+          -mt-[250px] lg:-mt-[200px] xl:-mt-[250px]
+          ">
         </div>
 </section> 
 
