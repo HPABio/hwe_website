@@ -140,18 +140,19 @@ const InteractiveTours = () => {
               <motion.div
                 key={tour.id}
                 onClick={() => setSelectedTour(tour)}
-                className={`cursor-pointer group relative bg-white rounded-tr-2xl rounded-tl-2xl  shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 ${
+                className={`cursor-pointer group relative bg-white overflow-hidden
+                  rounded-tr-2xl rounded-tl-2xl  shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 ${
                   selectedTour.id === tour.id
                     ? "ring-4 ring-accent1 ring-offset-2 "
                     : ""
                 }`}
                 whileHover={{ scale: 1.03 }}
               >
-                <div className="relative w-full h-72 rounded-t-2xl overflow-hidden">
+                <div className="relative w-full h-72 rounded-t-2xl overflow-hidden rounded-tr-2xl rounded-tl-2xl ">
                   <img
                     src={tour.images.card}
                     alt={tour.title}
-                    className={`w-full h-full ${tour.images.objectPosition} object-cover group-hover:scale-105 transition-transform duration-300`}
+                    className={`w-full h-full ${tour.images.objectPosition} object-cover group-hover:scale-105 transition-transform duration-300 rounded-tr-2xl rounded-tl-2xl overflow-hidden`}
                   />
                   <div className="absolute top-3 right-3 bg-white/80 backdrop-blur-sm text-accent2-brick font-semibold text-sm py-1 px-3 rounded-full shadow-sm">
                     {tour.availability}
