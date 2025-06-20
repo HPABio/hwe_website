@@ -1,0 +1,11 @@
+---
+// src/pages/tours.astro
+import Layout from '../layouts/main.astro';
+import InteractiveTours from '../components/InteractiveTours.tsx';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Unsere Touren" client:load>
+  <Header />
+  <InteractiveTours client:visible />
+</Layout> 

@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import Layout from '../layouts/main.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import AtAGlance from '../components/AtAGlance.astro';
@@ -22,38 +22,25 @@ import GrapeVinesV2 from '../components/GrapeVinesV2.astro';
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<html lang="de">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Brigitta Heyl – Geführte Wein-Erlebnistouren</title>
-		<!-- Google Fonts for Bodoni Moda, Meie Script, Monsieur La Doulaise -->
-
-		<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Gloock&family=Indie+Flower&family=Lusitana:wght@400;700&family=Monsieur+La+Doulaise&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
-
-	</head>
-
-	<body class="bg-background text-text min-h-screen">
-		<ScreenSizeDEVTOOL />
-		<Header />
-		<main>
-			<Hero />
-			<FirstInfoSectionV2 />
+<Layout title="Brigitta Heyl – Geführte Wein-Erlebnistouren">
+	<ScreenSizeDEVTOOL />
+	<Header />
+	<main>
+		<Hero />
+		<FirstInfoSectionV2 />
 
 
 
-			<!-- <GrapeVinesV2 /> -->
-			<!-- <FirstInfoSection /> -->
-			<!-- <GrapeVines /> -->
+		<!-- <GrapeVinesV2 /> -->
+		<!-- <FirstInfoSection /> -->
+		<!-- <GrapeVines /> -->
 
-			<!-- <HeroTransition /> -->
-			<!-- <AtAGlance />
-			<Tours />
-			<AboutMe /> -->
-			<Region />
-			<GetInTouch />
-		</main>
-		<Footer />
-	</body>
-</html>
+		<!-- <HeroTransition /> -->
+		<!-- <AtAGlance /> -->
+		<Tours />
+		<AboutMe />
+		<Region />
+		<GetInTouch />
+	</main>
+	<Footer />
+</Layout>

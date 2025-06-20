@@ -1,33 +1,67 @@
 ---
+import Button from './Button.astro';
 ---
-<section id="tours" class="py-16 w-screen"
-style={{
-  background: "linear-gradient(#fff0cb,#fff0cb),url(https://www.toptal.com/designers/subtlepatterns/uploads/seamless_paper_texture.png)",
-  backgroundBlendMode: "multiply",
-  placeContent: "center",
-  backgroundSize: "auto",
-  backgroundPosition: "center",
-  backgroundRepeat: "repeat",
-  backgroundAttachment: "fixed",
-}}>
-<div class="w-full h-full max-w-3xl mx-auto flex flex-col items-center justify-center">
-  <h2 class="text-2xl font-headline font-semibold mb-8 text-center text-accent2-brick">Touren</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div class="bg-soft-beige rounded-xl shadow-lg p-6 flex flex-col items-center">
-      <div class="text-4xl mb-2">🌸</div>
-      <h3 class="font-headline text-xl font-bold mb-2">Mandelblüte, Meerspinne & Monarchen</h3>
-      <p class="font-body text-center">Erleben Sie die Pfälzer Mandelblüte auf einer einzigartigen Route mit Genuss, Geschichte und Natur.</p>
+<!-- src/components/Tours.astro -->
+<section id="tours" class="relative py-24 sm:py-32 bg-white overflow-hidden">
+  
+  <div class="absolute inset-0 z-0">
+    <img src="/mj-grapes-mosaicGlass.png" alt="Vineyard background" class="w-full h-full object-cover opacity-10 saturate-[0.5]" />
+    <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-base font-semibold text-accent1 uppercase tracking-wider font-body">Erlesene Weintouren</h2>
+      <p class="mt-2 text-4xl font-extrabold font-bonanova text-gray-900 sm:text-5xl">
+        Entdecken Sie die Pfalz
+      </p>
+      <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500 font-body">
+        Jede Tour ein einzigartiges Erlebnis, das die Schönheit der Region, ihre Geschichte und natürlich ihre exzellenten Weine in den Mittelpunkt stellt.
+      </p>
     </div>
-    <div class="bg-soft-beige rounded-xl shadow-lg p-6 flex flex-col items-center">
-      <div class="text-4xl mb-2">🍇</div>
-      <h3 class="font-headline text-xl font-bold mb-2">Bacchus & Christophorus</h3>
-      <p class="font-body text-center">Eine Tour auf den Spuren der Weinkultur und regionaler Legenden – für Genießer und Entdecker.</p>
+
+    <div class="mt-20 grid gap-12 lg:grid-cols-3 lg:gap-x-8">
+      <!-- Tour Card 1 -->
+      <div class="group relative bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+        <div class="relative w-full h-72 rounded-t-2xl overflow-hidden">
+          <img src="/mj-almondFlower-mosaicGlass.png" alt="Mandelblüte2" class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-full
+          object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300 object-[50%_36%]">
+          <img src="/mj-almondFlowerV1.png" alt="Mandelblüte" class="w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-all duration-300 object-[50%_50%]">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold font-bonanova text-text">Mandelblüte, Meerspinne & Monarchen</h3>
+          <p class="mt-3 text-base text-gray-600 font-body">Erleben Sie die Pfälzer Mandelblüte auf einer einzigartigen Route mit Genuss, Geschichte und Natur.</p>
+        </div>
+      </div>
+
+      <!-- Tour Card 2 -->
+      <div class="group relative bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+        <div class="relative w-full h-72 rounded-t-2xl overflow-hidden">
+          <img src="/mj-Bachus-mosaicGlass.png" alt="Bacchus" class="w-full h-full object-cover object-[50%_20%] group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold font-bonanova text-text">Bacchus & Christophorus</h3>
+          <p class="mt-3 text-base text-gray-600 font-body">Eine Tour auf den Spuren der Weinkultur und regionaler Legenden – für Genießer und Entdecker.</p>
+        </div>
+      </div>
+
+      <!-- Tour Card 3 -->
+      <div class="group relative bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+        <div class="relative w-full h-72 rounded-t-2xl overflow-hidden">
+          <img src="/mj-GlühweinV1.png" alt="Glühwein" class="w-full h-full object-cover object-[50%_35%] group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold font-bonanova text-text">Glühwein & Winterzauber</h3>
+          <p class="mt-3 text-base text-gray-600 font-body">Wärmende Wintertour mit Glühwein, Geschichten und Pfälzer Herzlichkeit in der kalten Jahreszeit.</p>
+        </div>
+      </div>
     </div>
-    <div class="bg-soft-beige rounded-xl shadow-lg p-6 flex flex-col items-center">
-      <div class="text-4xl mb-2">🔥</div>
-      <h3 class="font-headline text-xl font-bold mb-2">Glühwein</h3>
-      <p class="font-body text-center">Wärmende Wintertour mit Glühwein, Geschichten und Pfälzer Herzlichkeit.</p>
+
+    <div class="mt-20 text-center">
+        <Button text="Alle Touren ansehen" href="#contact" style="primary" />
     </div>
   </div>
-</div>
 </section> 
