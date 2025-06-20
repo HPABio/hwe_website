@@ -5,7 +5,8 @@ import { useRef, type ReactNode } from "react";
 
 interface WaterColorRevealProps {
   id?: string;
-  children: ReactNode;
+  child1?: ReactNode;
+  child2?: ReactNode;
   width?: number | string;
   height?: number | string;
   revealFromCenter?: boolean;
@@ -14,7 +15,8 @@ interface WaterColorRevealProps {
 
 const WaterColorReveal = ({
   id,
-  children,
+  child1,
+  child2,
   width = "100%",
   height = "100%",
   revealFromCenter = true,
@@ -110,11 +112,17 @@ const WaterColorReveal = ({
           height={heightInPx}
           mask={`url(#${id}-revealMask)`}
         >
-          <div className="w-full h-full">{children}</div>
+          <div className="w-full h-full">
+            <div>{child1}</div>
+            <div>{child2}</div>
+          </div>
         </foreignObject>
       </svg>
       {/* Original content rendered underneath to maintain layout */}
-      <div className="invisible">{children}</div>
+      <div className="invisible">
+        <div>{child1}</div>
+        <div>{child2}</div>
+      </div>
     </motion.div>
   );
 };
