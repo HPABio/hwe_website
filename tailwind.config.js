@@ -16,8 +16,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        headline: ["Ballet", "cursive"],
+        headline: ["Bona Nova SC", "serif"],
         body: ["Newsreader", "serif"],
+        accent: ["Doulaise", "cursive"],
         doulaise: ["Monsieur La Doulaise", "cursive"],
         meie: ["Meie Script", "cursive"],
         playfair: ["Playfair Display", "serif"],
