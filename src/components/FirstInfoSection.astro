@@ -20,27 +20,26 @@ import WaterColorReveal from './WaterColorReveal.tsx';
   <div class="inset-0 relative z-10">
     <div class="flex flex-col md:flex-row items-center justify-between gap-4 xl:gap-12 w-full max-w-6xl mx-auto">
       <div class="flex-1 order-2 md:order-1 min-w-[320px]">
-        <h2 class="text-3xl font-bold mb-4 font-bonanova">
-          <span class="text-gradient-gold">
-            Genißen Sie...
+        <h2 class="text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-2 font-bonanova text-nowrap">
+          <span class="text-gradient-gold pr-32 text-nowrap">
+            Erkunden Sie
           </span>
         </h2>
-        <p class="text-lg text-gray-700 mb-6">
-          ...Weinerzeugnisse aus der Region um Neustadt an der Weinstraße.
+        <p class="text-lg xl:text-xl 2xl:text-2xl text-stone-700-700 mb-6">
+          die wunderschöne Gegend rund um Neustadt an der Weinstraße.
           </p>
-        <p class="text-sm text-gray-700 mb-6">
-          Bekannt für seine Weinberge und seine Weinprodukt wird ihnen hier eine kleine Auswahl an lokal 
-          produzierten Weinen angeboten. Und da zu einem guten Wein ein kleiner Happen nicht fehlen sollte,
-          gibt es dazu ein paar eigens abgestimmte regionale Snacks, die eine perfekte geschmackliche Ergänzung
-          darstellen. 
+        <p class="text-sm text-stone-500/70 mb-6">
+          Lassen Sie sich beim Wandern durch die malerische Landschaft der Gegend rund um Neustadt verzaubern, 
+          die für ihre Weinberge und deren Erzeugnisse weltweit bekannt ist. Von Hambach, Diedesfeld, 
+          und Duttweiler, über Geinsheim, Gimmeldingen, Haardt, bis hin zu Lachen-Speyerdorf, Königsbach, Mußbach,
+          die Region um Neustadt an der Weinstraße sprüht vor Geschichte und Tradition.
         </p>
       </div>
-      <div class="flex-1 order-1 md:order-2 flex justify-center items-center relative
-      ">
+      <div class="flex-1 order-1 md:order-2 flex justify-center items-center relative">
         <WaterColorReveal client:visible id="section-1" width={500} height={500}
-        className="h-[500px] aspect-square absolute md:top-[50%] md:translate-y-[-25%] rounded-full overflow-hidden drop-shadow-[2px_3px_15px_rgba(0,0,0,0.5)]"
-        >
-          <img src="/mj-vineYard-V1.png" alt="Section 1" class="object-cover w-full h-full rounded-xl shadow-lg" />
+        className="h-[500px] aspect-square absolute md:top-[50%] md:translate-y-[-25%] rounded-full overflow-hidden drop-shadow-[2px_3px_15px_rgba(0,0,0,0.5)]">
+          <img src="/mj-vineYard-ColorPencilSketch.png" alt="Section 1" class="object-cover object-[60%_50%] w-full h-full rounded-xl shadow-lg saturate-[0.75] -hue-rotate-[10deg]" />
+          <!-- <img src="/Neustadt-wide-angle.png" alt="Section 1" class="object-cover object-[30%_50%] w-full h-full rounded-xl shadow-lg saturate-50" /> -->
         </WaterColorReveal>
       </div>
     </div>
@@ -48,24 +47,27 @@ import WaterColorReveal from './WaterColorReveal.tsx';
     <!-- Section 2: Image Left, Text Right -->
     <div class="flex flex-col md:flex-row items-center justify-between gap-4 xl:gap-12 w-full max-w-6xl mx-auto">
       <div class="flex-1 order-2 md:order-2">
-        <h2 class="text-3xl font-bold mb-4 font-bonanova">
-          <span class="text-gradient-gold">
-            Erkunden Sie...
+        <h2 class="text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-2 font-bonanova">
+          <span class="text-gradient-gold pr-32 text-nowrap">
+            Genißen Sie
           </span>
         </h2>
-        <p class="text-lg text-gray-700 mb-6">
-          ...die wunderbare Gegend um Neustadt an der Weinstraße.
+        <p class="text-lg xl:text-xl 2xl:text-2xl text-stone-700 mb-6">
+          Weinerzeugnisse aus den Bergen rund um Neustadt.
           </p>
-        <p class="text-sm text-gray-700 mb-6">
-          Lassen Sie sich beim Wandern durch die malerische Landschaft der Gegend rund um Neustadt verzaubern, 
-          die für ihre Weinberge und deren Erzeugnisse weltweit bekannt ist. Von Hambach, Diedesfeld, 
-          und Duttweiler, über Geinsheim, Gimmeldingen, Haardt, bis hin zu Lachen-Speyerdorf, Königsbach, Mußbach,
-          die Region um Neustadt an der Weinstraße sprüht vor Geschichte und Tradition.
+        <p class="text-sm text-stone-500/70 mb-6">
+          Bekannt für seine Weinberge und seine Weinprodukt wird ihnen hier eine kleine Auswahl an lokal 
+          produzierten Weinen angeboten. Und da zu einem guten Wein ein kleiner Happen nicht fehlen sollte,
+          gibt es dazu ein paar eigens abgestimmte regionale Snacks, die eine perfekte geschmackliche Ergänzung
+          darstellen. 
         </p>
       </div>
       <div class="flex-1 order-1 md:order-1 flex justify-center">
         <WaterColorReveal client:visible id="section-2" width={400} height={400} className="drop-shadow-[0_0_15px_rgba(0,0,0,0.2)] h-[400px] aspect-square rounded-full overflow-hidden">
-          <img src="/mj-vineYard-V1.png" alt="Section 2" class="object-cover w-full h-full rounded-xl shadow-lg" />
+          <img src="public/oneWine-bottle-table.png" alt="Section 2" class="object-cover object-[50%_80%] w-full h-full rounded-xl shadow-lg saturate-[0.7]" />
+          <!-- <img src="public/twoWine-bottles-barrel.png" alt="Section 2" class="object-cover w-full h-full rounded-xl shadow-lg" /> -->
+          <!-- <img src="public/twoWine-bottles-table.png" alt="Section 2" class="object-cover w-full h-full rounded-xl shadow-lg" /> -->
+          <!-- <img src="public/wineBottle-mosaic-wall.png" alt="Section 2" class="object-cover w-full h-full rounded-xl shadow-lg" /> -->
         </WaterColorReveal>
       </div>
     </div>
@@ -73,15 +75,15 @@ import WaterColorReveal from './WaterColorReveal.tsx';
     <!-- Section 3: Image Right, Text Left -->
     <div class="flex flex-col md:flex-row items-center justify-between gap-4 xl:gap-12 w-full max-w-6xl mx-auto">
       <div class="flex-1 order-2 md:order-1">
-        <h2 class="text-3xl font-bold mb-4 font-bonanova">
-          <span class="text-gradient-gold">
-            Erleben Sie...
+        <h2 class="text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-2 font-bonanova">
+          <span class="text-gradient-gold pr-32 text-nowrap">
+            Erleben Sie
           </span>
         </h2>
-        <p class="text-lg text-gray-700 mb-6">
-          ...interaktiv die Geschichte der Gegend über die verschiedenen historischen Epochen hinweg. 
+        <p class="text-lg xl:text-xl 2xl:text-2xl text-stone-700 mb-6">
+          interaktiv die Geschichte der Gegend über die verschiedenen historischen Epochen hinweg. 
           </p>
-        <p class="text-sm text-gray-700 mb-6">
+        <p class="text-sm text-stone-500/70 mb-6">
           Ob als passiver Zuschauer oder zentraler Teil des Geschehens, während der interaktiven Tour-Elemente
           haben Sie die Möglichkeit in die lebendige Geschichte der Gegend einzutauchen. Dabei können die aktiven Teilnehmer
           der Tour in die Rolle einer historische Figur schlüpfen und die Geschichte hautnah erleben.
@@ -89,22 +91,24 @@ import WaterColorReveal from './WaterColorReveal.tsx';
       </div>
       <div class="flex-1 order-1 md:order-2 flex justify-center ">
         <WaterColorReveal client:visible id="section-3" width={600} height={600} className="h-[600px] aspect-square rounded-full overflow-hidden drop-shadow-[0_0_15px_rgba(0,0,0,0.2)]">
-          <img src="/mj-vineYard-V1.png" alt="Section 3" class="object-cover w-full h-full rounded-xl shadow-lg" />
+          <!-- <img src="/mj-vineYard-ColorPencilSketch.png" alt="Section 3" class="object-cover w-full h-full rounded-xl shadow-lg" /> -->
+          <img src="/mj-vineYard-washedOutColors.png" alt="Section 3" class="object-cover object-[70%_50%] w-full h-full rounded-xl shadow-lg" />
+          <!-- <img src="public/mj-oldTown-vineyard.png" alt="Section 4" class="object-cover object-[100%_0%] w-full h-full rounded-xl shadow-lg saturate-[0.75]" /> -->
         </WaterColorReveal>
       </div>
     </div>
   
     <!-- Section 4: Image Left, Text Right -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 xl:gap-12 w-full max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between mt-6 gap-4 xl:gap-12 w-full max-w-6xl mx-auto">
       <div class="flex-1 order-2 md:order-2">
-        <h2 class="text-3xl font-bold mb-4 font-bonanova">
-          <span class="text-gradient-gold">
-            Entdecken Sie...
+        <h2 class="text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-2 font-bonanova text-nowrap">
+          <span class="text-gradient-gold pr-32 text-nowrap">
+            Entdecken Sie
           </span>
         </h2>
-        <p class="text-lg text-gray-700 mb-6">
-          ...das Herz und die Seele der Region rund um die weltbekannte Wein- und Demokratiestadt.
-        <p class="text-sm text-gray-700 mb-6">
+        <p class="text-lg xl:text-xl 2xl:text-2xl text-stone-700 mb-6">
+          das Herz und die Seele der Region rund um die weltbekannte Wein- und Demokratiestadt.
+        <p class="text-sm text-stone-500/70 mb-6">
           Mit ihrem einzigartigen Charakter und Charme, verzaubert die Region ihre Besucher und bietet 
           Dank des größten Fachwerkhausbestand der Pfalz, von mittelalterlichen Gassen, historischen Marktplätzen, 
           dem Hambacher Schloss, und vielen weiteren historischen Stätten, 
@@ -114,31 +118,32 @@ import WaterColorReveal from './WaterColorReveal.tsx';
       </div>
       <div class="flex-1 order-1 md:order-1 flex justify-center">
         <WaterColorReveal client:visible id="section-4" width={300} height={300} className="h-[300px] aspect-square rounded-full overflow-hidden drop-shadow-[0_0_15px_rgba(0,0,0,0.2)]">
+          
           <img src="/mj-vineYard-V1.png" alt="Section 4" class="object-cover w-full h-full rounded-xl shadow-lg" />
         </WaterColorReveal>
       </div>
     </div>
 
     <!-- Section 5: Image Right, Text Left -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 xl:gap-12 w-full max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between mt-6 gap-4 xl:gap-12 w-full max-w-6xl mx-auto">
       <div class="flex-1 order-2 md:order-1">
-        <h2 class="text-3xl font-bold mb-4 font-bonanova">
-          <span class="text-gradient-gold">
-            Erfahren Sie...
+        <h2 class="text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-2 font-bonanova">
+          <span class="text-gradient-gold pr-32 text-nowrap">
+            Erfahren Sie
           </span>
         </h2>
-        <p class="text-lg text-gray-700 mb-6">
-          ...was so besonderes die Region um Neustadt an der Weinstraße ausmacht.
+        <p class="text-lg xl:text-xl 2xl:text-2xl text-stone-700 mb-6">
+          was die Region um Neustadt an der Weinstraße so besonders macht.
           </p>
-        <p class="text-sm text-gray-700 mb-6">
+        <p class="text-sm text-stone-500/70 mb-6">
           Ob als passiver Zuschauer oder zentraler Teil des Geschehens, während der interaktiven Tour-Elemente
           haben Sie die Möglichkeit in die lebendige Geschichte der Gegend einzutauchen. Dabei können die aktiven Teilnehmer
           der Tour in die Rolle einer historische Figur schlüpfen und die Geschichte hautnah erleben.
         </p>
       </div>
       <div class="flex-1 order-1 md:order-2 flex justify-center ">
-        <WaterColorReveal client:visible id="section-3" width={600} height={600} className="h-[600px] aspect-square rounded-full overflow-hidden drop-shadow-[0_0_15px_rgba(0,0,0,0.2)]">
-          <img src="/mj-vineYard-V1.png" alt="Section 3" class="object-cover w-full h-full rounded-xl shadow-lg" />
+        <WaterColorReveal client:visible id="section-5" width={600} height={600} className="h-[600px] aspect-square rounded-full overflow-hidden drop-shadow-[0_0_15px_rgba(0,0,0,0.2)]">
+          <img src="public/oldMan-and-Boy-Wine.png" alt="Section 3" class="object-cover object-[50%_90%] w-full h-full rounded-xl shadow-lg saturate-[0.8]" /> 
         </WaterColorReveal>
       </div>
     </div>
